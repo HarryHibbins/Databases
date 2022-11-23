@@ -27,6 +27,7 @@ class AlbumRepository
 
         # sql = 'SELECT * FROM albums WHERE id = $1;'
         sql = 'SELECT * FROM albums WHERE id = 1;'
+        
         result = DatabaseConnection.exec_params(sql, [])
 
         album = Album.new
